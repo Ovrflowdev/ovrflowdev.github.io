@@ -1,0 +1,27 @@
+{
+  "name": "ovrflowdev.github.io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.16.6"
+  },
+  "description": "Second version of my portfolio !",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ovrflowdev/ovrflowdev.github.io.git"
+  },
+  "author": "Ovrflow.dev",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Ovrflowdev/ovrflowdev.github.io/issues"
+  },
+  "homepage": "https://github.com/Ovrflowdev/ovrflowdev.github.io#readme"
+}
