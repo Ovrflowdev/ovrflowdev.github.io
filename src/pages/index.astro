@@ -1,11 +1,59 @@
----
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
----
+		<link rel="preload" fetchpriority="high" as="image" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b58d2370bac0541a_166745430.webp" type="image/webp">
 
-<Layout>
-	<Welcome />
-</Layout>
+		<link rel="icon" type="image/svg+xml" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b58d2370bac0541a_166745430.webp" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Ovrflow.dev's Portfolio</title>
+	</head>
+
+	<body>
+		<div class="aboutCard">
+        	<img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b58d2370bac0541a_166745430.webp" alt="My profile picture.">
+        	<h1>Hi, I'm Diego</h1>
+    	</div>
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+	:root {
+		--bg-color: #181825;
+		--accent-color: #CDD6F4;
+	}
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--bg-color);
+		color: var(--accent-color);
+	}
+	.aboutCard {
+		margin-top: 3vh;
+		display: flex;
+		flex-direction: column;
+		justify-self: center;
+		align-items: center;
+		h1 {
+			font-family: "JetBrains Mono", monospace;
+			font-optical-sizing: auto;
+			font-weight: 800;
+			font-style: normal;
+			font-size: 3em;
+		}
+		img {
+			border-radius: 100%;
+			width: 40vmin;
+			transition: 0.5s;
+		}
+		img:hover {
+			box-shadow: 15px 5px 1px var(--accent-color);
+			transform: translateX(-15px); 
+		}
+	}
+</style>
